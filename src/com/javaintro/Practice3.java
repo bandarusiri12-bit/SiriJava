@@ -16,10 +16,10 @@ void hello(){
 
 // nullifying the object
 		
-		p= null;
+		p= null; //object1 eligible for gc
 		
 		// Reassigning object
-		p2=p1;
+		p2=p1; // object2 eligibile for gc
 		
 		//Anonymous object
 		new Practice3();
