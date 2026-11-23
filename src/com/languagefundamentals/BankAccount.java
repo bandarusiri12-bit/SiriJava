@@ -7,7 +7,7 @@ String HolderName;
  String IFSCcode;
  float Balance;
 
-  void Method1() {
+   void Method1() {
 	 
 	 
 	  Account_number=1234;
@@ -36,7 +36,7 @@ String HolderName;
 	public static void main(String[] args) {
 		
 		BankAccount a = new BankAccount();
-		 BankAccount b = new BankAccount();
+		 
 a.Method1();
 
 	}
