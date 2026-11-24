@@ -55,7 +55,7 @@ Method2();
 	
 	void Method2() {
 		
-		totalsalary=(float) (basesalary + bounce);
+		totalsalary= (float) (basesalary + bounce);
 		display();
 		
 	}
