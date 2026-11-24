@@ -9,6 +9,7 @@ public class Product {
 	float Base_price;
 	float Total_price;
 	double TaxAmount;
+	double Discount;
 	
 	
 	void method1() {
@@ -19,6 +20,7 @@ public class Product {
 		Category_name="APPLE";
 		Base_price=1000.00F;
 		TaxAmount=500.00F;
+		Discount=10;
 		method2();
 		
 		Product_id = Product_id+1;
@@ -27,6 +29,7 @@ public class Product {
 		Category_name="ABCD";
 		Base_price=2000.00F;
 		TaxAmount=500.00F;
+		Discount=20;
 		method2();
 		
 	}
@@ -35,9 +38,11 @@ public class Product {
 	void method2() {
 		
 		Total_price=(float)(Base_price+TaxAmount);
+		Discount=Total_price+Discount/100;
 		display();
 	}
 	
+
 	void display() {
 		
 		
@@ -48,6 +53,7 @@ public class Product {
 		System.out.println("Base_price:"+Base_price);
 		System.out.println("TaxAmount:"+TaxAmount);
 		System.out.println("Total_price=:"+Total_price);
+		System.out.println("Discount:"+Discount);
 		System.out.println();
 	
 	}
